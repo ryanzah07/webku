@@ -62,7 +62,24 @@
                 transform: translateY(0);
             }
         }
-    </style>
+    <style>
+    /* CSS sebelumnya */
+
+    .profile {
+        animation: muncul 1s ease;
+    }
+
+    @keyframes muncul {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
 </head>
 
 <body>
