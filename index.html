@@ -3,39 +3,25 @@
 <head>
     <title>Berita Saya</title>
     <style>
-        body {
-            font-family: Arial;
-            background: #f4f4f4;
-            margin: 0;
-        }
+    .berita {
+        background: white;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 10px;
 
-        .header {
-            background: #222;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            font-size: 24px;
-        }
+        opacity: 0;
+        transform: translateY(20px);
+        animation: muncul 0.8s ease forwards;
+    }
 
-        .container {
-            padding: 20px;
+    @keyframes muncul {
+        to {
+            opacity: 1;
+            transform: translateY(0);
         }
-
-        .berita {
-            background: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        .berita h2 {
-            margin: 0;
-        }
-
-        .berita p {
-            color: #555;
-        }
+    }
     </style>
+
 </head>.berita {
     background: white;
     padding: 15px;
