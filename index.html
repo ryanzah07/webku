@@ -116,11 +116,18 @@ p {
 </audio>
 
 <script>
-document.body.addEventListener('click', function() {
+function nyalakanMusik() {
   const audio = document.getElementById('musik');
   audio.muted = false;
   audio.play();
-});
+
+  // biar cuma sekali jalan
+  document.removeEventListener('click', nyalakanMusik);
+  document.removeEventListener('touchstart', nyalakanMusik);
+}
+
+document.addEventListener('click', nyalakanMusik);
+document.addEventListener('touchstart', nyalakanMusik);
 </script>
 
 <div class="container">
