@@ -1,56 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Web Keren Saya</title>
+    <title>Berita Saya</title>
     <style>
         body {
-            text-align: center;
             font-family: Arial;
-            background: linear-gradient(to right, #4facfe, #00f2fe);
+            background: #f4f4f4;
+            margin: 0;
+        }
+
+        .header {
+            background: #222;
             color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 24px;
         }
 
-        h1 {
-            margin-top: 100px;
-            animation: muncul 2s ease;
+        .container {
+            padding: 20px;
         }
 
-        p {
-            animation: muncul 3s ease;
-        }
-
-        @keyframes muncul {
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        button {
-            padding: 10px 20px;
-            border: none;
+        .berita {
             background: white;
-            color: black;
+            padding: 15px;
+            margin-bottom: 20px;
             border-radius: 10px;
-            cursor: pointer;
-            animation: muncul 4s ease;
         }
 
-        button:hover {
-            transform: scale(1.1);
-            transition: 0.3s;
+        .berita h2 {
+            margin: 0;
+        }
+
+        .berita p {
+            color: #555;
         }
     </style>
 </head>
 <body>
 
-    <h1>awas ada hacker 💀</h1>
-    <p>Website saya sekarang ada animasi 😎</p>
-    <button onclick="alert('Halo juga!')">Klik Saya</button>
+<div class="header">
+    📰 Website Berita Saya
+</div>
+
+<div class="container">
+
+    <div class="berita">
+        <h2>kasus pemerkosaan di gedung smk nuansa</h2>
+        <p> terduga pelaku pemerkosaan vierly (15th) melakukan aksinya dengan bejat</p>
+    </div>
+
+    <div class="berita">
+        <h2>vierli berulah</h2>
+        <p> vierly memperkosa elza sampai muncrat </p>
+    </div>
+
+</div>
 
 </body>
 </html>
